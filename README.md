@@ -2,4 +2,6 @@
 
 Move robots on a board.
 
-Start ```npm start```
+Build ```npm run build```
+
+Test ```npm test```
