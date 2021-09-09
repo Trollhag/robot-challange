@@ -23,7 +23,7 @@ export class Board {
     if (!location) {
       throw new Error(`Cannot add item to full board.`)
     }
-    if (!this.isSpaceOccupied(location)) {
+    if (this.isSpaceOccupied(location)) {
       throw new Error(`Cannot set piece on occupied location x${location[0]}y${location[1]}`)
     }
     this._board[ location[1] ][ location[0] ] = item
